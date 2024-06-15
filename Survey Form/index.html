@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change survey-form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form">
+        <h1 id="title">Climate Change</h1>
+        <p id="description">Please fill out this form with the required information</p>
+        <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+            <fieldset>
+                <label id="name-label">Name:
+                    <input placeholder="Enter Your Name:" id="name" type="text" required/>
+                </label>
+                <label id="email-label">Email ID:
+                    <input placeholder="Enter Your Email ID" id="email" type="email" required/>
+                </label>
+                <label id="number-label">Age:
+                    <input placeholder="Enter Your Age" id="number" type="number" min="14" max="99" required/>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>Gender:
+                    <select id="dropdown">
+                        <option value="">(select one)</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Prefer to not say</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset><legend>1.In your view, has air pollution ever affected your health?</legend>
+                <label><input id="Yes" value="Yes" class="inline" type="radio" name="Yes-No-Don't Know" /> Yes</label>
+                <label><input id="No" value="No" class="inline" type="radio" name="Yes-No-Don't Know" /> No</label>
+                <label><input id="Don't Know" value="Don't Know" class="inline" type="radio" name="Yes-No-Don't Know" /> Don't Know</label>
+            </fieldset>
+            <fieldset><legend>2.Has air pollution ever affected the health of any of your family or friends? </legend>
+                <label><input id="Yes" value="Yes" class="inline" type="radio" name="Yes-No-Don't Know" /> Yes</label>
+                <label><input id="No" value="No" class="inline" type="radio" name="Yes-No-Don't Know" /> No</label>
+                <label><input id="Don't Know" value="Don't Know" class="inline" type="radio" name="Yes-No-Don't Know" /> Don't Know</label>
+            </fieldset>
+            <fieldset><legend>3.Apart from effects on people's health, are you aware of any other effects of air pollution? </legend>
+                <label><input id="Yes" value="Yes" class="inline" type="radio" name="Yes-No-Don't Know" /> Yes(go to question 4)</label>
+                <label><input id="No" value="No" class="inline" type="radio" name="Yes-No-Don't Know" /> No(go to question 5)</label>
+                <label><input id="Don't Know" value="Don't Know" class="inline" type="radio" name="Yes-No-Don't Know" /> Don't Know(go to question 5)</label>
+            </fieldset>
+            <fieldset><legend>4.If yes, what other effects are you aware of? </legend><textarea rows="4" cols="60" placeholder="The effects are..."></textarea></fieldset>
+            
+            <fieldset><legend>5.Have you, in the last 5 years, experienced any form of flood damage (including to your home, garden or vehicle)?</legend>
+                <label><input id="Yes " class="inline" type="radio" value="Yes" name="Yes-No-Don't Know"/> Yes</label>
+                <label><input id="NO" class="inline" type="radio" value="No"name="Yes-No-Don't Know"/> No</label>
+                <label><input id="Don't Know" class="inline" type="radio" value="Don't Know"name="Yes-No-Don't Know"/> Don't Know</label>
+            </fieldset>
+            <fieldset><legend>6.Do you feel the pattern of weather is generally changing?</legend>
+                <label><input id="Yes" value="Yes" class="inline" type="radio" name="Yes-No-Don't Know" /> Yes(go to question 7)</label>
+                <label><input id="No" value="No" class="inline" type="radio" name="Yes-No-Don't Know" /> No(go to question 8)</label>
+                <label><input id="Don't Know" value="Don't Know" class="inline" type="radio" name="Yes-No-Don't Know" /> Don't Know(go to question 8)</label>
+            </fieldset>
+            <fieldset><legend>7.If yes, why do you think this might be? </legend><textarea rows="2" cols="60" placeholder="I think..."></textarea></fieldset>
+            <fieldset><legend>8.Have you heard of “climate change”? </legend>
+                <label><input id="Yes" value="Yes" class="inline" type="radio" name="Yes-No-Don't Know" /> Yes(go to question 9)</label>
+                <label><input id="No" value="No" class="inline" type="radio" name="Yes-No-Don't Know" /> No</label>
+                <label><input id="Don't Know" value="Don't Know" class="inline" type="radio" name="Yes-No-Don't Know" /> Don't Know</label>
+            </fieldset>
+            <fieldset><legend>9.What do you know about it? </legend><textarea rows="2" cols="60" placeholder="..."></textarea></fieldset>
+            <fieldset><legend>10.Where have you heard of “climate change”? </legend>
+                <label><input id="Television" value="Television" class="inline" type="checkbox"/> Television</label>
+                <label><input id="Radio" value="Radio" class="inline" type="checkbox"/> Radio</label>
+                <label><input id="Newspaper" value="Newspaper" class="inline" type="checkbox"/> Newspaper</label>
+                <label><input id="Internet" value="Internet" class="inline" type="checkbox"/> Internet</label>
+                <label><input id="Others" value="Others" class="inline" type="checkbox"/> Others <legend>Please write in </legend><textarea rows="1" cols="40" placeholder="..."></textarea></label>
+            </fieldset>
+            <fieldset><legend>11.Do you have any climate change indicators at your house</legend>
+                <label><input id="Yes" value="Yes" class="inline" type="radio" name="Yes-No-Don't Know" /> Yes</label>
+                <label><input id="No" value="No" class="inline" type="radio" name="Yes-No-Don't Know" /> No</label>
+                <label><input id="Don't Know" value="Don't Know" class="inline" type="radio" name="Yes-No-Don't Know" /> Don't Know</label>
+                <label for="Yes">If yes, upload Indicator reading document<input id="reading document" type="file" name="file" /></label>
+            <input type="submit" id="submit"/>
+        </form>
+    </div>
+</body>
+</html>

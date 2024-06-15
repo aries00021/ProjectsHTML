@@ -1,0 +1,40 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: Calibri;
+    background-image: url(https://marketplace.canva.com/EADakNo5Z7E/1/0/1131w/canva-blue-earth-global-warming-poster-muVwkPxJLiU.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  h1, p {
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  input {
+    width: 100%;
+  }
+  
+  .inline {
+    width: unset;
+  }
+  
+  fieldset {
+    border: 0;
+  }
+  
+  form {
+    width: 100vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
